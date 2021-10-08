@@ -1,0 +1,71 @@
+@import '../var/variable';
+@import '../var/mixins';
+// 一级标题
+.base-header {
+  margin-bottom: 10px;
+  &__header {
+    background: $baseBgColor;
+    color: $baseFontColorLight;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // @include clearfix();
+  }
+  &__content {
+    padding: 10px 8px;
+    border: 1px solid $--border-color-light;
+  }
+  line-height: 1;
+  &-tit {
+    @include text-middle(36px);
+    font-size: 18px;
+    font-weight: bold;
+    @include text-overflow {
+      max-width: 60%;
+    }
+  }
+  &-left {
+    float: left;
+  }
+  &-right {
+    float: right;
+  }
+}
+
+.base-header {
+  padding: 10px 16px;
+  &__header {
+    // padding-bottom: 5px;
+    border-bottom: 1px solid $--border-color-light;
+  }
+}
+
+// 二级标题
+.base-header-second {
+  padding: 0;
+  .base-header__header {
+    border-bottom: 0;
+  }
+  .base-header__content {
+    padding: 8px 4px;
+  }
+  border-bottom: 0;
+  .base-header-tit {
+    font-size: 16px;
+  }
+}
+
+// 三级标题
+.base-header-third {
+  padding: 0;
+  .base-header__header {
+    border-bottom: 0;
+  }
+  .base-header__content {
+    padding: 6px 3px;
+  }
+  .base-header-tit {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,145 @@
+@import '../var/variable';
+@import '../var/mixins';
+$activeColor: $--color-primary;
+$itemHeight: 36px;
+$baseFontColor: #212121;
+$transitionTime: 0.2s;
+$lineColor: #d5dbdf;
+.flow-sub {
+  padding-left: 1px;
+  transition: height $transitionTime ease-in-out;
+  overflow: hidden;
+}
+.flow-root {
+  padding: 20px 10px 20px 30px;
+  font-size: 14px;
+  position: relative;
+  line-height: 1;
+  .link-collase {
+    cursor: pointer;
+    width: 20px;
+    padding: 10px 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    &:hover {
+      color: $activeColor;
+    }
+  }
+  .flow-root__item,
+  .flow-sub__item {
+    display: block;
+  }
+  // .flow-sub__item {
+  //   &.active {
+  //     color: $activeColor;
+  //   }
+  // }
+  // 文本节点通用样式
+  .flow-root__link,
+  .flow-sub__link {
+    @extend %v-middle;
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+      text-decoration: none;
+      color: lighten($activeColor, 8%);
+    }
+    &.disabled {
+      color: #777;
+      cursor: default;
+      pointer-events: none;
+    }
+    &.active {
+      color: $activeColor;
+    }
+  }
+  // root文本样式
+  .flow-root__link {
+    font-size: 14px;
+    padding: 10px 8px;
+    color: $baseFontColor;
+    @include text-overflow {
+      width: 70%;
+      width: calc(100% - 20px);
+    }
+  }
+  // sub子文本样式
+  .flow-sub__link {
+    @include text-overflow;
+    font-size: 12px;
+    padding: 8px 6px;
+    color: lighten($baseFontColor, 8%);
+  }
+  // root节点样式
+  &__item {
+    position: relative;
+    &::before {
+      content: attr(data-caret-item);
+      color: $lineColor;
+      background: #fff;
+      width: 22px;
+      height: 22px;
+      font-size: 12px;
+      padding: 3px 0;
+      text-align: center;
+      top: 16px;
+      left: -26px;
+      border: 2px solid #d5dbdf;
+      transition: all 0.2s ease-in-out;
+      transform-origin: center center;
+      transform: translateY(-50%);
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 10;
+    }
+    &.progress {
+      font-weight: bold;
+      &::before {
+        color: $activeColor;
+        left: -28px;
+        width: auto;
+        height: auto;
+        padding: 0;
+        border-color: transparent;
+        font-size: 22px;
+        font-family: 'saasicon' !important;
+        content: '\e630';
+      }
+    }
+    &.progress-focus {
+      &::before {
+        content: '\e67e';
+      }
+    }
+  }
+  // 指示器样式
+  .active-caret {
+    font-size: 30px;
+    color: $--color-primary;
+    position: absolute;
+    right: 0;
+    transition: top $transitionTime ease-in-out;
+  }
+  // 进度条样式
+  .line {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: $lineColor;
+    left: 14px;
+    &.back {
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      height: calc(100% - 74px);
+    }
+    &.front {
+      z-index: 2;
+      background-color: $activeColor;
+      top: 38px;
+      transition: height $transitionTime ease-in-out;
+    }
+  }
+}

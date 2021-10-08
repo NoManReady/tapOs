@@ -1,0 +1,33 @@
+@import './utils/common.scss';
+@import './components/tag.scss';
+@import './components/customAlert.scss';
+@import './components/circleTag.scss';
+
+// 自定义loading
+.custom-loading {
+  z-index: 9999 !important;
+  .el-icon-loading {
+    font-size: 40px;
+  }
+  .el-loading-text {
+    font-size: 30px;
+  }
+}
+
+// 左边border统一定义
+.mark-vertical {
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  padding: 10px;
+}
+.mark-vertical:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 3px;
+  height: 60%;
+  line-height: 100%;
+  background: $--color-primary;
+}

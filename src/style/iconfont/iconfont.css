@@ -1,0 +1,7 @@
+[class*='isaas-'] {
+  font-family: "saasicon" !important;
+  font-size: 1em;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

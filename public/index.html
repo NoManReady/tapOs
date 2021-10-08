@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-tag="__v__data__tag__">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <% htmlWebpackPlugin.options.resources_css.forEach(function(item){ %>
+    <%if(item.cache){%>
+      <link href="<%= item.src %>" rel="stylesheet"></link>
+    <%}else{%>
+      <script>
+        document.write('\<link rel="stylesheet" href="<%= item.src %>?_t='+new Date().getTime()+'"\>\<\/link\>')
+      </script>
+    <%}%>
+    <% }) %>
+
+    <%if(process.env.NODE_ENV === 'production' && htmlWebpackPlugin.options.cdns){%>
+      <%htmlWebpackPlugin.options.cdns.CSS.forEach(cdn => {%>
+        <link href="<%=cdn%>" rel="stylesheet"></link>
+      <%}) %>
+    <%}%>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <% htmlWebpackPlugin.options.resources_js.forEach(function(item){ %>
+    <%if(item.cache){%>
+      <script type="text/javascript" src="<%= item.src %>"></script>
+    <%}else{%>
+      <!-- <script type="text/javascript">
+        var script=document.createElement('script');
+        script.setAttribute('type','text/javascript');
+        script.setAttribute('src','<%= item.src %>?_t='+new Date().getTime());
+        document.body.append(script);
+      </script> -->
+      <script type="text/javascript">
+        document.write('\<script id="'+new Date().getTime()+'" type="text\/javascript" src="<%= item.src %>"\>\<\/script\>')
+      </script>
+    <%}%>
+    <% }) %>
+    <%if(process.env.NODE_ENV === 'production' && htmlWebpackPlugin.options.cdns){%>
+      <%htmlWebpackPlugin.options.cdns.JS.forEach(cdn => {%>
+        <script src="<%=cdn%>"></script>
+      <%}) %>
+    <%}%>
+  </body>
+</html>

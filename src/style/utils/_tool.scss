@@ -1,0 +1,120 @@
+// 工具类
+@import '../var/variable';
+@import '../var/mixins';
+
+.hide,
+.v-block {
+  display: none;
+}
+.bold {
+  font-weight: bold;
+}
+.vt {
+  vertical-align: top !important;
+}
+
+// y轴滚动
+.sc-y {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+// 浮动
+.fl {
+  float: left !important;
+}
+
+.fr {
+  float: right !important;
+}
+
+// 文本对齐
+.tc {
+  text-align: center !important;
+}
+
+.tl {
+  text-align: left !important;
+}
+
+.tr {
+  text-align: right !important;
+}
+
+// 相对定位
+.pos-r {
+  position: relative !important;
+  z-index: 0;
+}
+
+// 绝对定位
+.pos-a {
+  position: absolute !important;
+}
+
+// 行块文本垂直居中对齐
+.vm {
+  @extend %v-middle;
+}
+
+// 段落文本缩进
+.t-indent {
+  text-indent: 2em;
+}
+
+// 链接
+.link {
+  text-decoration: underline;
+}
+
+// 单行省略
+.ellipsis {
+  @extend %text-overflow;
+}
+
+// 清除浮动
+.clearfix {
+  @extend %clearfix;
+}
+
+#nprogress .bar {
+  background: $--color-warning !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 无数据提示
+.nodata-tip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $--color-text-secondary;
+  font-size: 16px;
+}
+
+// 鼠标移入主题色
+.hover-primary {
+  &:hover {
+    color: $--color-primary;
+  }
+}
+
+// flex布局，flex-1可Y轴滚动
+.scroll-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .scroll-flex-container {
+    flex: 1;
+    min-height: 0;
+    @extend .sc-y;
+  }
+}

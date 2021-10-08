@@ -1,0 +1,93 @@
+// 情景类
+@import '../var/variable';
+@import '../var/mixins';
+
+// 字体颜色
+.c-primary {
+  color: $--color-primary !important;
+}
+
+.c-success {
+  color: $--color-success !important;
+}
+
+.c-warning {
+  color: $--color-warning !important;
+}
+
+.c-danger {
+  color: $--color-danger !important;
+}
+
+.c-disabled {
+  color: $--font-color-disabled-base !important;
+}
+
+.c-info {
+  color: $--color-info !important;
+}
+
+.c-base {
+  color: $baseFontColor !important;
+}
+
+.c-white {
+  color: #fff !important;
+}
+
+.c-9 {
+  color: #999 !important;
+}
+
+.c-6 {
+  color: #666 !important;
+}
+
+.c-3 {
+  color: #333 !important;
+}
+
+// 背景色
+.bg-statement {
+  background-color: $--color-statement;
+}
+
+.bg-info {
+  background-color: $--color-info;
+}
+
+.bg-primary {
+  background-color: rgba($--color-primary, 1) !important;
+}
+
+.bg-success {
+  background-color: rgba($--color-success, 1) !important;
+}
+
+.bg-warning {
+  background-color: rgba($--color-warning, 1) !important;
+}
+
+.bg-danger {
+  background-color: rgba($--color-danger, 1) !important;
+}
+
+.bg-lighter-primary {
+  background-color: rgba($--color-primary, 0.3) !important;
+}
+
+.bg-lighter-success {
+  background-color: rgba($--color-success, 0.3) !important;
+}
+
+.bg-lighter-warning {
+  background-color: rgba($--color-warning, 0.3) !important;
+}
+
+.bg-lighter-danger {
+  background-color: rgba($--color-danger, 0.3) !important;
+}
+
+.bg-white {
+  background: #fff !important;
+}
