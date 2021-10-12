@@ -11,6 +11,8 @@ export default {
     direction: "forward",
     // 全局loading
     loading: false,
+    // 侧边栏是否打开
+    collapse: Boolean(loadFromLocal(types.APP_ASIDE_CLOSE)),
   },
   actions: {
     title({ commit }, title) {
@@ -22,6 +24,10 @@ export default {
     },
     loading({ commit }, loading = true) {
       commit(types.APP_LOADING, loading)
+    },
+    setCollapse({ commit }, { value = true, save = true }) {
+      save && saveToLocal(types.APP_ASIDE_CLOSE, value);
+      commit(types.APP_ASIDE_CLOSE, value);
     }
   },
   mutations: {
@@ -33,6 +39,9 @@ export default {
     },
     [types.APP_LOADING](state, payload) {
       state.loading = payload
+    },
+    [types.APP_ASIDE_CLOSE](state, payload) {
+      state.collapse = payload;
     }
   },
   getters: {
@@ -41,6 +50,9 @@ export default {
     },
     direction(state) {
       return state.direction
+    },
+    collapse(state) {
+      return state.collapse;
     }
   }
 }

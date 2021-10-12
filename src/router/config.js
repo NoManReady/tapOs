@@ -15,7 +15,6 @@ function loadRoutes(router, next, to) {
     if (!store.getters.dynamicRoutes.length) {
       store.dispatch('getDynamicRoute').then(d => {
         router.addRoutes(d)
-        // next(to.fullPath)
         router.replace({
           path: to.fullPath
         })
@@ -57,8 +56,8 @@ export default (router) => {
       store.dispatch('app/direction', 'forward')
     }
     /*页面级animated--end*/
-    // loadRoutes(router,next, to)
-    next()
+    loadRoutes(router, next, to)
+    // next()
 
   })
 

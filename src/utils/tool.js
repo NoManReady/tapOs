@@ -1,4 +1,26 @@
 /**
+ * 转换流量单位
+ * @param {Int} val
+ */
+ export const rateTrans = val => {
+  val = +val
+  let _unit = {
+    0: '',
+    1: 'K',
+    2: 'M',
+    3: 'G',
+    4: 'T'
+  }
+  let _unitLen = Object.keys(_unit).length - 1
+  let _level = 0
+  while (val >= 1024 && _level < _unitLen) {
+    val /= 1024
+    _level++
+  }
+  return val.toFixed(2) + _unit[_level]
+}
+
+/**
  * 获取数据类型
  * @param {any} obj 处理数据
  */
@@ -54,13 +76,13 @@ export const deepClone = (data, transform = v => v) => {
  * @param {表单提交地址} url
  * @param {提交参数} params
  */
-export const formSubmit = (url, method = 'post', params) => {
+export const formSubmit = (url, params) => {
   let _form = document.createElement('form')
   let _iframe = document.createElement('iframe')
   document.body.appendChild(_iframe)
   _iframe.id = 'empty'
   _form.action = url
-  _form.method = method
+  _form.method = 'post'
   _form.target = 'empty'
   _form.style.display = 'none'
   for (let key in params) {
@@ -122,7 +144,123 @@ export const scrollTop = (el, from = 0, to, duration = 500, cb = () => { }) => {
   })
 }
 
+
 export const loop = () => { }
+// 根据连字符获取数组
+export const getArrayStr = (str, fn = s => s) => {
+  if (!str) {
+    return []
+  }
+  let _strArr = str.split(',')
+  let _arr = new Set()
+  _strArr.forEach(str => {
+    let [b, e = b] = str.split('-')
+    if (b > e) {
+      [b, e] = [e, b]
+    }
+    b = +b
+    e = +e
+    while (b <= e) {
+      _arr.add(b.toString())
+      b++
+    }
+  })
+  return [..._arr]
+}
+// 获取vlan字符串
+export const getConnectStr = (arr, fn = s => s, split = ',') => {
+  let _strArr = []
+  if (!(arr instanceof Array)) {
+    return arr
+  }
+  let _arr = [...arr].sort((a, b) => a - b)
+  _arr.reduce((prev, next) => {
+    let _last = prev[prev.length - 1]
+    if (_last && Number(_last[_last.length - 1]) + 1 === Number(next)) {
+      _last.push(next)
+    } else {
+      prev.push([next])
+    }
+    return prev
+  }, _strArr)
+  return _strArr
+    .reduce((strArr, next) => {
+      if (next.length >= 2) {
+        strArr.push(`${next[0]}-${next[next.length - 1]}`)
+      } else {
+        strArr.push(next.join(','))
+      }
+      return strArr
+    }, [])
+    .map(fn).join(split)
+}
+
+// 合并连续数组
+export const mergeArray = (arr, fn = (...argv) => argv) => {
+  let _strArr = []
+  if (!Array.isArray(arr)) {
+    return arr
+  }
+  let _arr = [...arr].sort((a, b) => a - b)
+  _arr.reduce((prev, next) => {
+    let _last = prev[prev.length - 1]
+    if (_last && Number(_last[1]) + 1 === Number(next)) {
+      _last[1] = next
+    } else {
+      prev.push([next, next])
+    }
+    return prev
+  }, _strArr)
+  return _strArr
+    .reduce((strArr, next) => {
+      strArr.push(fn(...next))
+      return strArr
+    }, [])
+}
+
+/**
+ * 生成随机的MAC地址
+ * @param {mac前缀} preMac
+ */
+export const getRandomMac = (preMac = '00:74:9C') => {
+  let _i = 6, _mac = ''
+  const _chars = '0123456789ABCDEF'
+  while (_i--) {
+    if (_i % 2) {
+      _mac += ':'
+    }
+    _mac += _chars.charAt(Math.floor(Math.random() * 15))
+  }
+  return preMac + _mac
+}
+
+
+export const getIntersection = (a, b, fn = a => a) => {
+  let _b = b.map(fn)
+  return a.filter(x => {
+    return _b.indexOf(fn(x)) > -1
+  })
+}
+
+export const getIntersectionAll = (fn, ...arr) => {
+  if (!arr.length) {
+    return arr
+  }
+  return arr.reduce((a, b) => {
+    return getIntersection(a, b, fn)
+  })
+}
+
+// 防抖
+export const debounce = (fn, wait = 200) => {
+  let _timer = null;
+  return function () {
+    if (_timer !== null) {
+      clearTimeout(_timer)
+    }
+    _timer = setTimeout(fn, wait)
+  }
+}
 
 // 判断对象是否改变
 export const objIsSame = (source, target) => {
@@ -184,27 +322,4 @@ export const registerNclick = (n, dom, cb = () => { }, type = 'click', remove = 
     dom.removeEventListener(type, _handle)
   }
 }
-
-// 获取指定父级组件
-export const getComponentByName = (parent, name) => {
-  if (parent) {
-    const _name = parent.$options.name
-    if (_name === name) {
-      return parent
-    }
-    return getComponentByName(parent.$parent, name)
-  }
-  return null
-}
-
-// 获取json字符串对象
-export const getJsonParseData = (jsonString, def = {}) => {
-  try {
-    if (jsonString === null) {
-      return def
-    }
-    return JSON.parse(jsonString)
-  } catch (error) {
-    return def
-  }
-}
+Î

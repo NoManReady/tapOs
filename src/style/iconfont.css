@@ -1,0 +1,252 @@
+@font-face {font-family: "ucd";
+  src: url('fonts/iconfont.woff?t=1585042891001') format('woff'),
+  url('fonts/iconfont.ttf?t=1585042891001') format('truetype');
+}
+
+[class^="tapos-"],
+[class*=" tapos-"]  {
+  font-family: "ucd" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  display: inline-block;
+}
+
+.ucd {
+  font-family: "ucd" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tapos-device:before {
+  content: "\e680";
+}
+
+.tapos-apac:before {
+  content: "\e655";
+}
+
+.tapos-user2:before {
+  content: "\e656";
+}
+
+.tapos-exit:before {
+  content: "\e6c8";
+}
+
+.tapos-warning:before {
+  content: "\e692";
+}
+
+.tapos-safe:before {
+  content: "\e67f";
+}
+
+.tapos-vpn:before {
+  content: "\e694";
+}
+
+.tapos-customerservice:before {
+  content: "\e695";
+}
+
+.tapos-disconnect:before {
+  content: "\e69a";
+}
+
+.tapos-edit:before {
+  content: "\e69f";
+}
+
+.tapos-help:before {
+  content: "\e6a8";
+}
+
+.tapos-key:before {
+  content: "\e6a9";
+}
+
+.tapos-list:before {
+  content: "\e6ac";
+}
+
+.tapos-menu-left:before {
+  content: "\e6ad";
+}
+
+.tapos-home:before {
+  content: "\e6b2";
+}
+
+.tapos-menu-right:before {
+  content: "\e6b3";
+}
+
+.tapos-monitor1:before {
+  content: "\e6b6";
+}
+
+.tapos-notcertified:before {
+  content: "\e6bd";
+}
+
+.tapos-reload:before {
+  content: "\e6bf";
+}
+
+.tapos-refresh:before {
+  content: "\e6c2";
+}
+
+.tapos-search:before {
+  content: "\e6c3";
+}
+
+.tapos-rocket:before {
+  content: "\e6c4";
+}
+
+.tapos-resetting:before {
+  content: "\e6c7";
+}
+
+.tapos-sys:before {
+  content: "\e6cc";
+}
+
+.tapos-upload:before {
+  content: "\e6d0";
+}
+
+.tapos-unvisible:before {
+  content: "\e6d4";
+}
+
+.tapos-visible:before {
+  content: "\e6d5";
+}
+
+.tapos-basicsettings:before {
+  content: "\e6d3";
+}
+
+.tapos-zusai:before {
+  content: "\e703";
+}
+
+.tapos-bugongdian:before {
+  content: "\e704";
+}
+
+.tapos-gongdian:before {
+  content: "\e705";
+}
+
+.tapos-shanglian:before {
+  content: "\e706";
+}
+
+.tapos-guangkou:before {
+  content: "\e6ae";
+}
+
+.tapos-upport:before {
+  content: "\e6c0";
+}
+
+.tapos-downport:before {
+  content: "\e811";
+}
+
+.tapos-r:before {
+  content: "\e658";
+}
+
+.tapos-ruijie:before {
+  content: "\e660";
+}
+
+.tapos-eweb:before {
+  content: "\e66d";
+}
+
+.tapos-project:before {
+  content: "\e66c";
+}
+
+.tapos-ap:before {
+  content: "\e674";
+}
+
+.tapos-user:before {
+  content: "\e675";
+}
+
+.tapos-switch:before {
+  content: "\e676";
+}
+
+.tapos-gateway:before {
+  content: "\e677";
+}
+
+.tapos-wifi:before {
+  content: "\e678";
+}
+
+.tapos-systemset:before {
+  content: "\e679";
+}
+
+.tapos-cloud:before {
+  content: "\e673";
+}
+
+.tapos-diagnosis:before {
+  content: "\e67a";
+}
+
+.tapos-collectorstation:before {
+  content: "\e67b";
+}
+
+.tapos-doublewan:before {
+  content: "\e67c";
+}
+
+.tapos-factoranalysis:before {
+  content: "\e67d";
+}
+
+.tapos-loop:before {
+  content: "\e67e";
+}
+
+.tapos-loopprotect:before {
+  content: "\e681";
+}
+
+.tapos-network:before {
+  content: "\e683";
+}
+
+.tapos-monitor:before {
+  content: "\e684";
+}
+
+.tapos-PortMapping:before {
+  content: "\e686";
+}
+
+.tapos-toolbox:before {
+  content: "\e689";
+}
+
+.tapos-vlan:before {
+  content: "\e68e";
+}
+

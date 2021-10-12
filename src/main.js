@@ -9,21 +9,16 @@ import { log, error, openLoading, closeLoading } from '@/utils'
 import cookie from 'cookies-js'
 window.Cookie = cookie
 
-// import { i18n } from '@/plugin/i18n'
-// Vue.use(i18n)
-
 // UI框架
 import '@/utils/elementImport'
-
 // 样式库
-import 'element-ui/lib/theme-chalk/display.css';
+// import 'element-ui/lib/theme-chalk/display.css';
 import '@/style/common.scss'
-import '@/style/iconfont/iconfont.css'
+import '@/style/iconfont.css'
 import 'animate.css'
 
 import Pager from '@/base/Pager'
 
-Vue.use(Pager)
 
 
 // 工具配置
@@ -32,6 +27,8 @@ import bus from '@/utils/bus'
 
 
 import * as filters from '@/filters'
+
+Vue.use(Pager)
 
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])

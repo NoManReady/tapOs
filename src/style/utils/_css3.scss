@@ -1,5 +1,3 @@
-//  css3动画
-
 .slide-left-enter,
 .slide-left-leave-active,
 .slide-right-enter,
@@ -8,22 +6,23 @@
 .slide-down-leave-active {
   position: absolute;
 
-  opacity: 0.2;
+  opacity: .2;
 
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity .5s ease, transform .5s ease;
 }
 
 .fade-enter,
 .fade-leave-active {
-  opacity: 0.1;
+  opacity: .1;
 
-  transition: opacity 0.1s linear;
+  transition: opacity .1s linear;
 }
 
 .fade-enter-active,
 .fade-leave {
   opacity: 1;
 }
+
 
 .slide-left-enter {
   transform: translate(-100%, 0);
@@ -39,6 +38,7 @@
 
   transform: translate(0, 0);
 }
+
 
 .slide-right-enter {
   transform: translate(100%, 0);
@@ -61,18 +61,18 @@
   transform: translate(0, 100%);
 }
 
+
 .scale-enter-active,
 .scale-leave {
   opacity: 1;
-  transition: all 0.3s ease-in-out;
-  transform: scale(1) !important;
+
+  transition: all .3s ease;
+  transform: translate(-50%, -50%) scale(1) !important;
 }
-.scale-move {
-  transition: all 0.3s ease-in-out;
-}
+
 .scale-enter,
 .scale-leave-active {
   opacity: 0;
-  // transition: all 0.1s ease;
-  transform: scale(0.6) !important;
+
+  transform: translate(-50%, -50%) scale(.6) !important;
 }

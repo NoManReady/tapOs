@@ -1,10 +1,13 @@
-@import './theme';
+@import '../../theme/theme.scss';
+/*fixed*/
+
 $theme: $--color-primary;
+$border-main: #d4d9e0;
+$box-bgc:#E8F4FE;
+$border-light-color:#efefef;
+// layout
+$app-header-height: 64px;
+$app-footer-height: 0;
+$app-aside-width: 180px;
 
-$baseFontColor: #222;
-
-$baseFontColorLight: #656565;
-
-$baseBgColor: #e9ecf0;
-
-$baseGutter: 5px;
+$app-bg-color:#f0f2f5;
