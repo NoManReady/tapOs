@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-carousel {
@@ -272,7 +292,7 @@
     transition: .3s;
     border-radius: 50%;
     background-color: rgba(31, 45, 61, 0.11);
-    color: #ffffff;
+    color: #FFFFFF;
     position: absolute;
     top: 50%;
     z-index: 10;
@@ -313,7 +333,7 @@
       .el-carousel__indicators--outside .el-carousel__indicator:hover button {
         opacity: 0.64; }
       .el-carousel__indicators--outside button {
-        background-color: #c0c4cc;
+        background-color: #bfbfbf;
         opacity: 0.24; }
     .el-carousel__indicators--labels {
       left: 0;
@@ -348,7 +368,7 @@
     opacity: 0.48;
     width: 30px;
     height: 2px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border: none;
     outline: none;
     padding: 0;

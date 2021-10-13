@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,18 +259,28 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-tag {
-  background-color: #e7f3fc;
-  border-color: #cee6fa;
-  color: #0a82e5;
+  background-color: #eaf0ff;
+  border-color: #d5e1ff;
+  color: #2b6afd;
   display: inline-block;
   height: 32px;
   padding: 0 10px;
   line-height: 30px;
   font-size: 12px;
-  color: #0a82e5;
+  color: #2b6afd;
   border-width: 1px;
   border-style: solid;
   border-radius: 4px;
@@ -268,56 +288,56 @@
   box-sizing: border-box;
   white-space: nowrap; }
   .el-tag.is-hit {
-    border-color: #0a82e5; }
+    border-color: #2b6afd; }
   .el-tag .el-tag__close {
-    color: #0a82e5; }
+    color: #2b6afd; }
     .el-tag .el-tag__close:hover {
-      color: #ffffff;
-      background-color: #0a82e5; }
+      color: #FFFFFF;
+      background-color: #2b6afd; }
   .el-tag.el-tag--info {
-    background-color: whitesmoke;
-    border-color: #ebebeb;
-    color: #999999; }
+    background-color: #f4f4f5;
+    border-color: #e9e9eb;
+    color: #909399; }
     .el-tag.el-tag--info.is-hit {
-      border-color: #999999; }
+      border-color: #909399; }
     .el-tag.el-tag--info .el-tag__close {
-      color: #999999; }
+      color: #909399; }
       .el-tag.el-tag--info .el-tag__close:hover {
-        color: #ffffff;
-        background-color: #999999; }
+        color: #FFFFFF;
+        background-color: #909399; }
   .el-tag.el-tag--success {
-    background-color: #ecf8eb;
-    border-color: #d8f2d7;
-    color: #3dbc37; }
+    background-color: #e6f3e6;
+    border-color: #cce7cd;
+    color: #018903; }
     .el-tag.el-tag--success.is-hit {
-      border-color: #3dbc37; }
+      border-color: #018903; }
     .el-tag.el-tag--success .el-tag__close {
-      color: #3dbc37; }
+      color: #018903; }
       .el-tag.el-tag--success .el-tag__close:hover {
-        color: #ffffff;
-        background-color: #3dbc37; }
+        color: #FFFFFF;
+        background-color: #018903; }
   .el-tag.el-tag--warning {
-    background-color: #fef8ea;
-    border-color: #fdf0d5;
-    color: #f3b42e; }
+    background-color: #fef1e6;
+    border-color: #fce2cd;
+    color: #f06f03; }
     .el-tag.el-tag--warning.is-hit {
-      border-color: #f3b42e; }
+      border-color: #f06f03; }
     .el-tag.el-tag--warning .el-tag__close {
-      color: #f3b42e; }
+      color: #f06f03; }
       .el-tag.el-tag--warning .el-tag__close:hover {
-        color: #ffffff;
-        background-color: #f3b42e; }
+        color: #FFFFFF;
+        background-color: #f06f03; }
   .el-tag.el-tag--danger {
-    background-color: #feedec;
-    border-color: #fddbd9;
-    color: #f34b3f; }
+    background-color: #fcebe9;
+    border-color: #f8d6d2;
+    color: #de321f; }
     .el-tag.el-tag--danger.is-hit {
-      border-color: #f34b3f; }
+      border-color: #de321f; }
     .el-tag.el-tag--danger .el-tag__close {
-      color: #f34b3f; }
+      color: #de321f; }
       .el-tag.el-tag--danger .el-tag__close:hover {
-        color: #ffffff;
-        background-color: #f34b3f; }
+        color: #FFFFFF;
+        background-color: #de321f; }
   .el-tag .el-icon-close {
     border-radius: 50%;
     text-align: center;
@@ -333,115 +353,115 @@
     .el-tag .el-icon-close::before {
       display: block; }
   .el-tag--dark {
-    background-color: #0a82e5;
-    border-color: #0a82e5;
+    background-color: #2b6afd;
+    border-color: #2b6afd;
     color: white; }
     .el-tag--dark.is-hit {
-      border-color: #0a82e5; }
+      border-color: #2b6afd; }
     .el-tag--dark .el-tag__close {
       color: white; }
       .el-tag--dark .el-tag__close:hover {
-        color: #ffffff;
-        background-color: #3b9bea; }
+        color: #FFFFFF;
+        background-color: #5588fd; }
     .el-tag--dark.el-tag--info {
-      background-color: #999999;
-      border-color: #999999;
+      background-color: #909399;
+      border-color: #909399;
       color: white; }
       .el-tag--dark.el-tag--info.is-hit {
-        border-color: #999999; }
+        border-color: #909399; }
       .el-tag--dark.el-tag--info .el-tag__close {
         color: white; }
         .el-tag--dark.el-tag--info .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #adadad; }
+          color: #FFFFFF;
+          background-color: #a6a9ad; }
     .el-tag--dark.el-tag--success {
-      background-color: #3dbc37;
-      border-color: #3dbc37;
+      background-color: #018903;
+      border-color: #018903;
       color: white; }
       .el-tag--dark.el-tag--success.is-hit {
-        border-color: #3dbc37; }
+        border-color: #018903; }
       .el-tag--dark.el-tag--success .el-tag__close {
         color: white; }
         .el-tag--dark.el-tag--success .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #64c95f; }
+          color: #FFFFFF;
+          background-color: #34a135; }
     .el-tag--dark.el-tag--warning {
-      background-color: #f3b42e;
-      border-color: #f3b42e;
+      background-color: #f06f03;
+      border-color: #f06f03;
       color: white; }
       .el-tag--dark.el-tag--warning.is-hit {
-        border-color: #f3b42e; }
+        border-color: #f06f03; }
       .el-tag--dark.el-tag--warning .el-tag__close {
         color: white; }
         .el-tag--dark.el-tag--warning .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #f5c358; }
+          color: #FFFFFF;
+          background-color: #f38c35; }
     .el-tag--dark.el-tag--danger {
-      background-color: #f34b3f;
-      border-color: #f34b3f;
+      background-color: #de321f;
+      border-color: #de321f;
       color: white; }
       .el-tag--dark.el-tag--danger.is-hit {
-        border-color: #f34b3f; }
+        border-color: #de321f; }
       .el-tag--dark.el-tag--danger .el-tag__close {
         color: white; }
         .el-tag--dark.el-tag--danger .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #f56f65; }
+          color: #FFFFFF;
+          background-color: #e55b4c; }
   .el-tag--plain {
     background-color: white;
-    border-color: #9dcdf5;
-    color: #0a82e5; }
+    border-color: #aac3fe;
+    color: #2b6afd; }
     .el-tag--plain.is-hit {
-      border-color: #0a82e5; }
+      border-color: #2b6afd; }
     .el-tag--plain .el-tag__close {
-      color: #0a82e5; }
+      color: #2b6afd; }
       .el-tag--plain .el-tag__close:hover {
-        color: #ffffff;
-        background-color: #0a82e5; }
+        color: #FFFFFF;
+        background-color: #2b6afd; }
     .el-tag--plain.el-tag--info {
       background-color: white;
-      border-color: #d6d6d6;
-      color: #999999; }
+      border-color: #d3d4d6;
+      color: #909399; }
       .el-tag--plain.el-tag--info.is-hit {
-        border-color: #999999; }
+        border-color: #909399; }
       .el-tag--plain.el-tag--info .el-tag__close {
-        color: #999999; }
+        color: #909399; }
         .el-tag--plain.el-tag--info .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #999999; }
+          color: #FFFFFF;
+          background-color: #909399; }
     .el-tag--plain.el-tag--success {
       background-color: white;
-      border-color: #b1e4af;
-      color: #3dbc37; }
+      border-color: #99d09a;
+      color: #018903; }
       .el-tag--plain.el-tag--success.is-hit {
-        border-color: #3dbc37; }
+        border-color: #018903; }
       .el-tag--plain.el-tag--success .el-tag__close {
-        color: #3dbc37; }
+        color: #018903; }
         .el-tag--plain.el-tag--success .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #3dbc37; }
+          color: #FFFFFF;
+          background-color: #018903; }
     .el-tag--plain.el-tag--warning {
       background-color: white;
-      border-color: #fae1ab;
-      color: #f3b42e; }
+      border-color: #f9c59a;
+      color: #f06f03; }
       .el-tag--plain.el-tag--warning.is-hit {
-        border-color: #f3b42e; }
+        border-color: #f06f03; }
       .el-tag--plain.el-tag--warning .el-tag__close {
-        color: #f3b42e; }
+        color: #f06f03; }
         .el-tag--plain.el-tag--warning .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #f3b42e; }
+          color: #FFFFFF;
+          background-color: #f06f03; }
     .el-tag--plain.el-tag--danger {
       background-color: white;
-      border-color: #fab7b2;
-      color: #f34b3f; }
+      border-color: #f2ada5;
+      color: #de321f; }
       .el-tag--plain.el-tag--danger.is-hit {
-        border-color: #f34b3f; }
+        border-color: #de321f; }
       .el-tag--plain.el-tag--danger .el-tag__close {
-        color: #f34b3f; }
+        color: #de321f; }
         .el-tag--plain.el-tag--danger .el-tag__close:hover {
-          color: #ffffff;
-          background-color: #f34b3f; }
+          color: #FFFFFF;
+          background-color: #de321f; }
   .el-tag--medium {
     height: 28px;
     line-height: 26px; }

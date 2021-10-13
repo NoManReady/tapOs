@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-color-predefine {
@@ -276,8 +296,8 @@
     .el-color-predefine__color-selector:nth-child(10n + 1) {
       margin-left: 0; }
     .el-color-predefine__color-selector.selected {
-      -webkit-box-shadow: 0 0 3px 2px #0a82e5;
-      box-shadow: 0 0 3px 2px #0a82e5; }
+      -webkit-box-shadow: 0 0 3px 2px #2b6afd;
+      box-shadow: 0 0 3px 2px #2b6afd; }
     .el-color-predefine__color-selector > div {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -426,16 +446,16 @@
       color: #cccccc;
       cursor: not-allowed; }
     .el-color-dropdown__btn:hover {
-      color: #0a82e5;
-      border-color: #0a82e5; }
+      color: #2b6afd;
+      border-color: #2b6afd; }
   .el-color-dropdown__link-btn {
     cursor: pointer;
-    color: #0a82e5;
+    color: #2b6afd;
     text-decoration: none;
     padding: 15px;
     font-size: 12px; }
     .el-color-dropdown__link-btn:hover {
-      color: tint(#0a82e5, 20%); }
+      color: tint(#2b6afd, 20%); }
 
 .el-color-picker {
   display: inline-block;
@@ -532,7 +552,7 @@
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
-    color: #ffffff;
+    color: #FFFFFF;
     text-align: center;
     font-size: 12px; }
   .el-color-picker__panel {
@@ -541,8 +561,8 @@
     padding: 6px;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
-    background-color: #ffffff;
-    border: 1px solid #ebeef5;
+    background-color: #FFFFFF;
+    border: 1px solid #f2f6fc;
     border-radius: 4px;
     -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }

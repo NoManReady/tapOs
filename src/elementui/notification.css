@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-notification {
@@ -260,9 +280,9 @@
   border-radius: 8px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid #ebeef5;
+  border: 1px solid #f2f6fc;
   position: fixed;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: opacity .3s, left .3s, right .3s, top 0.4s, bottom .3s, -webkit-transform .3s;
@@ -280,13 +300,13 @@
   .el-notification__title {
     font-weight: bold;
     font-size: 16px;
-    color: #303133;
+    color: #262626;
     margin: 0; }
   .el-notification__content {
     font-size: 14px;
     line-height: 21px;
     margin: 6px 0 0 0;
-    color: #606266;
+    color: #595959;
     text-align: justify; }
     .el-notification__content p {
       margin: 0; }
@@ -299,18 +319,18 @@
     top: 18px;
     right: 15px;
     cursor: pointer;
-    color: #909399;
+    color: #8c8c8c;
     font-size: 16px; }
     .el-notification__closeBtn:hover {
-      color: #606266; }
+      color: #595959; }
   .el-notification .el-icon-success {
-    color: #3dbc37; }
+    color: #018903; }
   .el-notification .el-icon-error {
-    color: #f34b3f; }
+    color: #de321f; }
   .el-notification .el-icon-info {
-    color: #999999; }
+    color: #909399; }
   .el-notification .el-icon-warning {
-    color: #f3b42e; }
+    color: #f06f03; }
 
 .el-notification-fade-enter.right {
   right: 0;

@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-alert {
@@ -259,7 +279,7 @@
   box-sizing: border-box;
   border-radius: 4px;
   position: relative;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   overflow: hidden;
   opacity: 1;
   display: -webkit-box;
@@ -271,47 +291,47 @@
   -webkit-transition: opacity .2s;
   transition: opacity .2s; }
   .el-alert.is-light .el-alert__closebtn {
-    color: #c0c4cc; }
+    color: #bfbfbf; }
   .el-alert.is-dark .el-alert__closebtn {
-    color: #ffffff; }
+    color: #FFFFFF; }
   .el-alert.is-dark .el-alert__description {
-    color: #ffffff; }
+    color: #FFFFFF; }
   .el-alert.is-center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
   .el-alert--success.is-light {
-    background-color: #ecf8eb;
-    color: #3dbc37; }
+    background-color: #e6f3e6;
+    color: #018903; }
     .el-alert--success.is-light .el-alert__description {
-      color: #3dbc37; }
+      color: #018903; }
   .el-alert--success.is-dark {
-    background-color: #3dbc37;
-    color: #ffffff; }
+    background-color: #018903;
+    color: #FFFFFF; }
   .el-alert--info.is-light {
-    background-color: whitesmoke;
-    color: #999999; }
+    background-color: #f4f4f5;
+    color: #909399; }
   .el-alert--info.is-dark {
-    background-color: #999999;
-    color: #ffffff; }
+    background-color: #909399;
+    color: #FFFFFF; }
   .el-alert--info .el-alert__description {
-    color: #999999; }
+    color: #909399; }
   .el-alert--warning.is-light {
-    background-color: #fef8ea;
-    color: #f3b42e; }
+    background-color: #fef1e6;
+    color: #f06f03; }
     .el-alert--warning.is-light .el-alert__description {
-      color: #f3b42e; }
+      color: #f06f03; }
   .el-alert--warning.is-dark {
-    background-color: #f3b42e;
-    color: #ffffff; }
+    background-color: #f06f03;
+    color: #FFFFFF; }
   .el-alert--error.is-light {
-    background-color: #feedec;
-    color: #f34b3f; }
+    background-color: #fcebe9;
+    color: #de321f; }
     .el-alert--error.is-light .el-alert__description {
-      color: #f34b3f; }
+      color: #de321f; }
   .el-alert--error.is-dark {
-    background-color: #f34b3f;
-    color: #ffffff; }
+    background-color: #de321f;
+    color: #FFFFFF; }
   .el-alert__content {
     display: table-cell;
     padding: 0 8px; }

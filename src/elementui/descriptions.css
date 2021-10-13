@@ -543,128 +543,82 @@
 -------------------------- */
 /* Break-point
 --------------------------*/
-.el-popper .popper__arrow,
-.el-popper .popper__arrow::after {
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid; }
+.el-descriptions-item__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
-.el-popper .popper__arrow {
-  border-width: 6px;
-  -webkit-filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03));
-  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.03)); }
+.el-descriptions-item__label.has-colon::after {
+  content: ':';
+  position: relative;
+  top: -0.5px; }
 
-.el-popper .popper__arrow::after {
-  content: " ";
-  border-width: 6px; }
+.el-descriptions-item__label.is-bordered-label {
+  font-weight: bold;
+  color: #8c8c8c;
+  background: #fafafa; }
 
-.el-popper[x-placement^="top"] {
-  margin-bottom: 12px; }
+.el-descriptions-item__label:not(.is-bordered-label) {
+  margin-right: 10px; }
 
-.el-popper[x-placement^="top"] .popper__arrow {
-  bottom: -6px;
-  left: 50%;
-  margin-right: 3px;
-  border-top-color: #f2f6fc;
-  border-bottom-width: 0; }
-  .el-popper[x-placement^="top"] .popper__arrow::after {
-    bottom: 1px;
-    margin-left: -6px;
-    border-top-color: #FFFFFF;
-    border-bottom-width: 0; }
-
-.el-popper[x-placement^="bottom"] {
-  margin-top: 12px; }
-
-.el-popper[x-placement^="bottom"] .popper__arrow {
-  top: -6px;
-  left: 50%;
-  margin-right: 3px;
-  border-top-width: 0;
-  border-bottom-color: #f2f6fc; }
-  .el-popper[x-placement^="bottom"] .popper__arrow::after {
-    top: 1px;
-    margin-left: -6px;
-    border-top-width: 0;
-    border-bottom-color: #FFFFFF; }
-
-.el-popper[x-placement^="right"] {
-  margin-left: 12px; }
-
-.el-popper[x-placement^="right"] .popper__arrow {
-  top: 50%;
-  left: -6px;
-  margin-bottom: 3px;
-  border-right-color: #f2f6fc;
-  border-left-width: 0; }
-  .el-popper[x-placement^="right"] .popper__arrow::after {
-    bottom: -6px;
-    left: 1px;
-    border-right-color: #FFFFFF;
-    border-left-width: 0; }
-
-.el-popper[x-placement^="left"] {
-  margin-right: 12px; }
-
-.el-popper[x-placement^="left"] .popper__arrow {
-  top: 50%;
-  right: -6px;
-  margin-bottom: 3px;
-  border-right-width: 0;
-  border-left-color: #f2f6fc; }
-  .el-popper[x-placement^="left"] .popper__arrow::after {
-    right: 1px;
-    bottom: -6px;
-    margin-left: -6px;
-    border-right-width: 0;
-    border-left-color: #FFFFFF; }
-
-.el-select-dropdown {
-  position: absolute;
-  z-index: 1001;
-  border: solid 1px #ebeef5;
-  border-radius: 4px;
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+.el-descriptions {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 5px 0; }
-  .el-select-dropdown.is-multiple .el-select-dropdown__item {
-    padding-right: 40px; }
-  .el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
-    color: #2b6afd;
+  font-size: 14px;
+  color: #262626; }
+  .el-descriptions__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 20px; }
+    .el-descriptions__title {
+      font-size: 16px;
+      font-weight: bold; }
+  .el-descriptions__body {
+    color: #595959;
     background-color: #FFFFFF; }
-    .el-select-dropdown.is-multiple .el-select-dropdown__item.selected.hover {
-      background-color: #f5f5f5; }
-    .el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after {
-      position: absolute;
-      right: 20px;
-      font-family: 'element-icons';
-      content: "\e6da";
-      font-size: 12px;
-      font-weight: bold;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
-  .el-select-dropdown .el-scrollbar.is-empty .el-select-dropdown__list {
-    padding: 0; }
-
-.el-select-dropdown__empty {
-  padding: 10px 0;
-  margin: 0;
-  text-align: center;
-  color: #999;
-  font-size: 14px; }
-
-.el-select-dropdown__wrap {
-  max-height: 274px; }
-
-.el-select-dropdown__list {
-  list-style: none;
-  padding: 6px 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+    .el-descriptions__body .el-descriptions__table {
+      border-collapse: collapse;
+      width: 100%;
+      table-layout: fixed; }
+      .el-descriptions__body .el-descriptions__table .el-descriptions-item__cell {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        text-align: left;
+        font-weight: normal;
+        line-height: 1.5; }
+        .el-descriptions__body .el-descriptions__table .el-descriptions-item__cell.is-left {
+          text-align: left; }
+        .el-descriptions__body .el-descriptions__table .el-descriptions-item__cell.is-center {
+          text-align: center; }
+        .el-descriptions__body .el-descriptions__table .el-descriptions-item__cell.is-right {
+          text-align: right; }
+  .el-descriptions .is-bordered {
+    table-layout: auto; }
+    .el-descriptions .is-bordered .el-descriptions-item__cell {
+      border: 1px solid #f2f6fc;
+      padding: 12px 10px; }
+  .el-descriptions :not(.is-bordered) .el-descriptions-item__cell {
+    padding-bottom: 12px; }
+  .el-descriptions--medium.is-bordered .el-descriptions-item__cell {
+    padding: 10px; }
+  .el-descriptions--medium:not(.is-bordered) .el-descriptions-item__cell {
+    padding-bottom: 10px; }
+  .el-descriptions--small {
+    font-size: 12px; }
+    .el-descriptions--small.is-bordered .el-descriptions-item__cell {
+      padding: 8px 10px; }
+    .el-descriptions--small:not(.is-bordered) .el-descriptions-item__cell {
+      padding-bottom: 8px; }
+  .el-descriptions--mini {
+    font-size: 12px; }
+    .el-descriptions--mini.is-bordered .el-descriptions-item__cell {
+      padding: 6px 10px; }
+    .el-descriptions--mini:not(.is-bordered) .el-descriptions-item__cell {
+      padding-bottom: 6px; }

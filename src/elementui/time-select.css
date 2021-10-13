@@ -118,6 +118,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* BEM support Func
@@ -241,6 +251,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -370,6 +390,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Element Chalk Variables */
@@ -491,6 +521,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .fade-in-linear-enter-active,
@@ -629,7 +669,7 @@
   .el-date-editor .el-range__icon {
     font-size: 14px;
     margin-left: -5px;
-    color: #c0c4cc;
+    color: #bfbfbf;
     float: left;
     line-height: 32px; }
   .el-date-editor .el-range-input {
@@ -645,15 +685,15 @@
     width: 39%;
     text-align: center;
     font-size: 14px;
-    color: #606266; }
+    color: #595959; }
     .el-date-editor .el-range-input::-webkit-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-date-editor .el-range-input::-moz-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-date-editor .el-range-input::-ms-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-date-editor .el-range-input::placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
   .el-date-editor .el-range-separator {
     display: inline-block;
     height: 100%;
@@ -663,10 +703,10 @@
     line-height: 32px;
     font-size: 14px;
     width: 5%;
-    color: #303133; }
+    color: #262626; }
   .el-date-editor .el-range__close-icon {
     font-size: 14px;
-    color: #c0c4cc;
+    color: #bfbfbf;
     width: 25px;
     display: inline-block;
     float: right;
@@ -685,9 +725,9 @@
   line-height: 1; }
 
 .el-range-editor.is-active {
-  border-color: #0a82e5; }
+  border-color: #2b6afd; }
   .el-range-editor.is-active:hover {
-    border-color: #0a82e5; }
+    border-color: #2b6afd; }
 
 .el-range-editor--medium.el-input__inner {
   height: 36px; }
@@ -732,26 +772,26 @@
   line-height: 20px; }
 
 .el-range-editor.is-disabled {
-  background-color: #f5f7fa;
-  border-color: #e4e7ed;
-  color: #c0c4cc;
+  background-color: #f5f5f5;
+  border-color: #ebeef5;
+  color: #bfbfbf;
   cursor: not-allowed; }
   .el-range-editor.is-disabled:hover, .el-range-editor.is-disabled:focus {
-    border-color: #e4e7ed; }
+    border-color: #ebeef5; }
   .el-range-editor.is-disabled input {
-    background-color: #f5f7fa;
-    color: #c0c4cc;
+    background-color: #f5f5f5;
+    color: #bfbfbf;
     cursor: not-allowed; }
     .el-range-editor.is-disabled input::-webkit-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-range-editor.is-disabled input::-moz-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-range-editor.is-disabled input::-ms-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-range-editor.is-disabled input::placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
   .el-range-editor.is-disabled .el-range-separator {
-    color: #c0c4cc; }
+    color: #bfbfbf; }
 
 /* Element Chalk Variables */
 /* 改变主题色变量 */
@@ -872,6 +912,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* BEM support Func
@@ -995,6 +1045,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -1124,14 +1184,24 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-picker-panel {
-  color: #606266;
-  border: 1px solid #e4e7ed;
+  color: #595959;
+  border: 1px solid #ebeef5;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  background: #FFFFFF;
   border-radius: 4px;
   line-height: 30px;
   margin: 5px 0; }
@@ -1146,7 +1216,7 @@
     border-top: 1px solid #e4e4e4;
     padding: 4px;
     text-align: right;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     position: relative;
     font-size: 0; }
   .el-picker-panel__shortcut {
@@ -1156,16 +1226,16 @@
     background-color: transparent;
     line-height: 28px;
     font-size: 14px;
-    color: #606266;
+    color: #595959;
     padding-left: 12px;
     text-align: left;
     outline: none;
     cursor: pointer; }
     .el-picker-panel__shortcut:hover {
-      color: #0a82e5; }
+      color: #2b6afd; }
     .el-picker-panel__shortcut.active {
       background-color: #e6f1fe;
-      color: #0a82e5; }
+      color: #2b6afd; }
   .el-picker-panel__btn {
     border: 1px solid #dcdcdc;
     color: #333;
@@ -1181,14 +1251,14 @@
       cursor: not-allowed; }
   .el-picker-panel__icon-btn {
     font-size: 12px;
-    color: #303133;
+    color: #262626;
     border: 0;
     background: transparent;
     cursor: pointer;
     outline: none;
     margin-top: 8px; }
     .el-picker-panel__icon-btn:hover {
-      color: #0a82e5; }
+      color: #2b6afd; }
     .el-picker-panel__icon-btn.is-disabled {
       color: #bbb; }
       .el-picker-panel__icon-btn.is-disabled:hover {
@@ -1206,7 +1276,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-top: 6px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   overflow: auto; }
 
 .el-picker-panel *[slot=sidebar] + .el-picker-panel__body,
@@ -1245,7 +1315,7 @@
     .el-date-picker__header--bordered {
       margin-bottom: 0;
       padding-bottom: 12px;
-      border-bottom: solid 1px #ebeef5; }
+      border-bottom: solid 1px #f2f6fc; }
       .el-date-picker__header--bordered + .el-picker-panel__content {
         margin-top: 0; }
   .el-date-picker__header-label {
@@ -1255,11 +1325,11 @@
     line-height: 22px;
     text-align: center;
     cursor: pointer;
-    color: #606266; }
+    color: #595959; }
     .el-date-picker__header-label:hover {
-      color: #0a82e5; }
+      color: #2b6afd; }
     .el-date-picker__header-label.active {
-      color: #0a82e5; }
+      color: #2b6afd; }
   .el-date-picker__prev-btn {
     float: left; }
   .el-date-picker__next-btn {
@@ -1394,6 +1464,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -1523,6 +1603,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-scrollbar {
@@ -1547,11 +1637,11 @@
     height: 0;
     cursor: pointer;
     border-radius: inherit;
-    background-color: rgba(144, 147, 153, 0.3);
+    background-color: rgba(140, 140, 140, 0.3);
     -webkit-transition: .3s background-color;
     transition: .3s background-color; }
     .el-scrollbar__thumb:hover {
-      background-color: rgba(144, 147, 153, 0.5); }
+      background-color: rgba(140, 140, 140, 0.5); }
   .el-scrollbar__bar {
     position: absolute;
     right: 2px;
@@ -1693,6 +1783,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -1822,6 +1922,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-popper .popper__arrow,
@@ -1849,12 +1959,12 @@
   bottom: -6px;
   left: 50%;
   margin-right: 3px;
-  border-top-color: #ebeef5;
+  border-top-color: #f2f6fc;
   border-bottom-width: 0; }
   .el-popper[x-placement^="top"] .popper__arrow::after {
     bottom: 1px;
     margin-left: -6px;
-    border-top-color: #ffffff;
+    border-top-color: #FFFFFF;
     border-bottom-width: 0; }
 
 .el-popper[x-placement^="bottom"] {
@@ -1865,12 +1975,12 @@
   left: 50%;
   margin-right: 3px;
   border-top-width: 0;
-  border-bottom-color: #ebeef5; }
+  border-bottom-color: #f2f6fc; }
   .el-popper[x-placement^="bottom"] .popper__arrow::after {
     top: 1px;
     margin-left: -6px;
     border-top-width: 0;
-    border-bottom-color: #ffffff; }
+    border-bottom-color: #FFFFFF; }
 
 .el-popper[x-placement^="right"] {
   margin-left: 12px; }
@@ -1879,12 +1989,12 @@
   top: 50%;
   left: -6px;
   margin-bottom: 3px;
-  border-right-color: #ebeef5;
+  border-right-color: #f2f6fc;
   border-left-width: 0; }
   .el-popper[x-placement^="right"] .popper__arrow::after {
     bottom: -6px;
     left: 1px;
-    border-right-color: #ffffff;
+    border-right-color: #FFFFFF;
     border-left-width: 0; }
 
 .el-popper[x-placement^="left"] {
@@ -1895,13 +2005,13 @@
   right: -6px;
   margin-bottom: 3px;
   border-right-width: 0;
-  border-left-color: #ebeef5; }
+  border-left-color: #f2f6fc; }
   .el-popper[x-placement^="left"] .popper__arrow::after {
     right: 1px;
     bottom: -6px;
     margin-left: -6px;
     border-right-width: 0;
-    border-left-color: #ffffff; }
+    border-left-color: #FFFFFF; }
 
 .time-select {
   margin: 5px 0;
@@ -1917,14 +2027,14 @@
   line-height: 20px; }
 
 .time-select-item.selected:not(.disabled) {
-  color: #0a82e5;
+  color: #2b6afd;
   font-weight: bold; }
 
 .time-select-item.disabled {
-  color: #e4e7ed;
+  color: #ebeef5;
   cursor: not-allowed; }
 
 .time-select-item:hover {
-  background-color: #f5f7fa;
+  background-color: #f5f5f5;
   font-weight: bold;
   cursor: pointer; }

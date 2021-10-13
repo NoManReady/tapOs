@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-timeline-item {
@@ -262,13 +282,13 @@
     position: absolute;
     left: 4px;
     height: 100%;
-    border-left: 2px solid #e4e7ed; }
+    border-left: 2px solid #ebeef5; }
   .el-timeline-item__icon {
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 13px; }
   .el-timeline-item__node {
     position: absolute;
-    background-color: #e4e7ed;
+    background-color: #ebeef5;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -288,15 +308,15 @@
       width: 14px;
       height: 14px; }
     .el-timeline-item__node--primary {
-      background-color: #0a82e5; }
+      background-color: #2b6afd; }
     .el-timeline-item__node--success {
-      background-color: #3dbc37; }
+      background-color: #018903; }
     .el-timeline-item__node--warning {
-      background-color: #f3b42e; }
+      background-color: #f06f03; }
     .el-timeline-item__node--danger {
-      background-color: #f34b3f; }
+      background-color: #de321f; }
     .el-timeline-item__node--info {
-      background-color: #999999; }
+      background-color: #909399; }
   .el-timeline-item__dot {
     position: absolute;
     display: -webkit-box;
@@ -309,9 +329,9 @@
     -ms-flex-align: center;
     align-items: center; }
   .el-timeline-item__content {
-    color: #303133; }
+    color: #262626; }
   .el-timeline-item__timestamp {
-    color: #909399;
+    color: #8c8c8c;
     line-height: 1;
     font-size: 13px; }
     .el-timeline-item__timestamp.is-top {

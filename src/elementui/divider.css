@@ -118,6 +118,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* BEM support Func
@@ -241,6 +251,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -252,7 +272,7 @@
 /* BEM
  -------------------------- */
 .el-divider {
-  background-color: #dcdfe6;
+  background-color: #d9d9d9;
   position: relative; }
   .el-divider--horizontal {
     display: block;
@@ -268,10 +288,10 @@
     position: relative; }
   .el-divider__text {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     padding: 0 20px;
     font-weight: 500;
-    color: #303133;
+    color: #262626;
     font-size: 14px; }
     .el-divider__text.is-left {
       left: 20px;

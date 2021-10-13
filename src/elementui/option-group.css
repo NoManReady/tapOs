@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-select-group {
@@ -269,11 +289,11 @@
         right: 20px;
         bottom: 12px;
         height: 1px;
-        background: #e4e7ed; }
+        background: #ebeef5; }
   .el-select-group__title {
     padding-left: 20px;
     font-size: 12px;
-    color: #999999;
+    color: #909399;
     line-height: 30px; }
   .el-select-group .el-select-dropdown__item {
     padding-left: 20px; }

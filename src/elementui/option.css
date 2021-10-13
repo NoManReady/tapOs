@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-select-dropdown__item {
@@ -258,19 +278,19 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: #606266;
+  color: #595959;
   height: 34px;
   line-height: 34px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   cursor: pointer; }
   .el-select-dropdown__item.is-disabled {
-    color: #c0c4cc;
+    color: #bfbfbf;
     cursor: not-allowed; }
     .el-select-dropdown__item.is-disabled:hover {
-      background-color: #ffffff; }
+      background-color: #FFFFFF; }
   .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
-    background-color: #f5f7fa; }
+    background-color: #f5f5f5; }
   .el-select-dropdown__item.selected {
-    color: #0a82e5;
+    color: #2b6afd;
     font-weight: bold; }

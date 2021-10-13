@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* BEM support Func
@@ -372,6 +392,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -501,6 +531,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-textarea {
@@ -518,50 +558,50 @@
     box-sizing: border-box;
     width: 100%;
     font-size: inherit;
-    color: #606266;
-    background-color: #ffffff;
+    color: #595959;
+    background-color: #FFFFFF;
     background-image: none;
-    border: 1px solid #dcdfe6;
+    border: 1px solid #d9d9d9;
     border-radius: 4px;
     -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
     .el-textarea__inner::-webkit-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-textarea__inner::-moz-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-textarea__inner::-ms-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-textarea__inner::placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-textarea__inner:hover {
-      border-color: #c0c4cc; }
+      border-color: #bfbfbf; }
     .el-textarea__inner:focus {
       outline: none;
-      border-color: #0a82e5; }
+      border-color: #2b6afd; }
   .el-textarea .el-input__count {
-    color: #999999;
-    background: #ffffff;
+    color: #909399;
+    background: #FFFFFF;
     position: absolute;
     font-size: 12px;
     bottom: 5px;
     right: 10px; }
   .el-textarea.is-disabled .el-textarea__inner {
-    background-color: #f5f7fa;
-    border-color: #e4e7ed;
-    color: #c0c4cc;
+    background-color: #f5f5f5;
+    border-color: #ebeef5;
+    color: #bfbfbf;
     cursor: not-allowed; }
     .el-textarea.is-disabled .el-textarea__inner::-webkit-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-textarea.is-disabled .el-textarea__inner::-moz-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-textarea.is-disabled .el-textarea__inner::-ms-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-textarea.is-disabled .el-textarea__inner::placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
   .el-textarea.is-exceed .el-textarea__inner {
-    border-color: #f34b3f; }
+    border-color: #de321f; }
   .el-textarea.is-exceed .el-input__count {
-    color: #f34b3f; }
+    color: #de321f; }
 
 .el-input {
   position: relative;
@@ -585,13 +625,13 @@
         background: #fff;
         width: 6px; }
   .el-input .el-input__clear {
-    color: #c0c4cc;
+    color: #bfbfbf;
     font-size: 14px;
     cursor: pointer;
     -webkit-transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1); }
     .el-input .el-input__clear:hover {
-      color: #909399; }
+      color: #8c8c8c; }
   .el-input .el-input__count {
     height: 100%;
     display: -webkit-inline-box;
@@ -600,22 +640,22 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: #999999;
+    color: #909399;
     font-size: 12px; }
     .el-input .el-input__count .el-input__count-inner {
-      background: #ffffff;
+      background: #FFFFFF;
       line-height: initial;
       display: inline-block;
       padding: 0 5px; }
   .el-input__inner {
     -webkit-appearance: none;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     background-image: none;
     border-radius: 4px;
-    border: 1px solid #dcdfe6;
+    border: 1px solid #d9d9d9;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    color: #606266;
+    color: #595959;
     display: inline-block;
     font-size: inherit;
     height: 40px;
@@ -625,26 +665,28 @@
     -webkit-transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     transition: border-color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
     width: 100%; }
+    .el-input__inner::-ms-reveal {
+      display: none; }
     .el-input__inner::-webkit-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-input__inner::-moz-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-input__inner::-ms-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-input__inner::placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-input__inner:hover {
-      border-color: #c0c4cc; }
+      border-color: #bfbfbf; }
     .el-input__inner:focus {
       outline: none;
-      border-color: #0a82e5; }
+      border-color: #2b6afd; }
   .el-input__suffix {
     position: absolute;
     height: 100%;
     right: 5px;
     top: 0;
     text-align: center;
-    color: #c0c4cc;
+    color: #bfbfbf;
     -webkit-transition: all .3s;
     transition: all .3s;
     pointer-events: none; }
@@ -656,7 +698,7 @@
     left: 5px;
     top: 0;
     text-align: center;
-    color: #c0c4cc;
+    color: #bfbfbf;
     -webkit-transition: all .3s;
     transition: all .3s; }
   .el-input__icon {
@@ -676,26 +718,26 @@
     pointer-events: none; }
   .el-input.is-active .el-input__inner {
     outline: none;
-    border-color: #0a82e5; }
+    border-color: #2b6afd; }
   .el-input.is-disabled .el-input__inner {
-    background-color: #f5f7fa;
-    border-color: #e4e7ed;
-    color: #c0c4cc;
+    background-color: #f5f5f5;
+    border-color: #ebeef5;
+    color: #bfbfbf;
     cursor: not-allowed; }
     .el-input.is-disabled .el-input__inner::-webkit-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-input.is-disabled .el-input__inner::-moz-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-input.is-disabled .el-input__inner::-ms-input-placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
     .el-input.is-disabled .el-input__inner::placeholder {
-      color: #c0c4cc; }
+      color: #bfbfbf; }
   .el-input.is-disabled .el-input__icon {
     cursor: not-allowed; }
   .el-input.is-exceed .el-input__inner {
-    border-color: #f34b3f; }
+    border-color: #de321f; }
   .el-input.is-exceed .el-input__suffix .el-input__count {
-    color: #f34b3f; }
+    color: #de321f; }
   .el-input--suffix .el-input__inner {
     padding-right: 30px; }
   .el-input--prefix .el-input__inner {
@@ -732,12 +774,12 @@
     vertical-align: middle;
     display: table-cell; }
   .el-input-group__append, .el-input-group__prepend {
-    background-color: #f5f7fa;
-    color: #999999;
+    background-color: #f5f5f5;
+    color: #909399;
     vertical-align: middle;
     display: table-cell;
     position: relative;
-    border: 1px solid #dcdfe6;
+    border: 1px solid #d9d9d9;
     border-radius: 4px;
     padding: 0 20px;
     width: 1px;
@@ -807,30 +849,30 @@
     width: 40px;
     height: auto;
     text-align: center;
-    background: #f5f7fa;
-    color: #606266;
+    background: #f5f5f5;
+    color: #595959;
     cursor: pointer;
     font-size: 13px; }
     .el-input-number__increase:hover, .el-input-number__decrease:hover {
-      color: #0a82e5; }
+      color: #2b6afd; }
       .el-input-number__increase:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled), .el-input-number__decrease:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled) {
-        border-color: #0a82e5; }
+        border-color: #2b6afd; }
     .el-input-number__increase.is-disabled, .el-input-number__decrease.is-disabled {
-      color: #c0c4cc;
+      color: #bfbfbf;
       cursor: not-allowed; }
   .el-input-number__increase {
     right: 1px;
     border-radius: 0 4px 4px 0;
-    border-left: 1px solid #dcdfe6; }
+    border-left: 1px solid #d9d9d9; }
   .el-input-number__decrease {
     left: 1px;
     border-radius: 4px 0 0 4px;
-    border-right: 1px solid #dcdfe6; }
+    border-right: 1px solid #d9d9d9; }
   .el-input-number.is-disabled .el-input-number__increase, .el-input-number.is-disabled .el-input-number__decrease {
-    border-color: #e4e7ed;
-    color: #e4e7ed; }
+    border-color: #ebeef5;
+    color: #ebeef5; }
     .el-input-number.is-disabled .el-input-number__increase:hover, .el-input-number.is-disabled .el-input-number__decrease:hover {
-      color: #e4e7ed;
+      color: #ebeef5;
       cursor: not-allowed; }
   .el-input-number--medium {
     width: 200px;
@@ -879,14 +921,14 @@
       transform: scale(0.8); }
   .el-input-number.is-controls-right .el-input-number__increase {
     border-radius: 0 4px 0 0;
-    border-bottom: 1px solid #dcdfe6; }
+    border-bottom: 1px solid #d9d9d9; }
   .el-input-number.is-controls-right .el-input-number__decrease {
     right: 1px;
     bottom: 1px;
     top: auto;
     left: auto;
     border-right: none;
-    border-left: 1px solid #dcdfe6;
+    border-left: 1px solid #d9d9d9;
     border-radius: 0 0 4px 0; }
   .el-input-number.is-controls-right[class*=medium] [class*=increase], .el-input-number.is-controls-right[class*=medium] [class*=decrease] {
     line-height: 17px; }

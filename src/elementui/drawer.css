@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 @-webkit-keyframes el-drawer-fade-in {
@@ -394,7 +414,7 @@
   position: absolute;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,7 +424,8 @@
   flex-direction: column;
   -webkit-box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
   box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12);
-  overflow: hidden; }
+  overflow: hidden;
+  outline: 0; }
   .el-drawer.rtl {
     -webkit-animation: rtl-drawer-out 0.3s;
     animation: rtl-drawer-out 0.3s; }
@@ -468,7 +489,8 @@
   .el-drawer__body {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    overflow: auto; }
     .el-drawer__body > * {
       -webkit-box-sizing: border-box;
       box-sizing: border-box; }

@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,15 +259,25 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-backtop {
   position: fixed;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  color: #0a82e5;
+  color: #2b6afd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,4 +293,4 @@
   cursor: pointer;
   z-index: 5; }
   .el-backtop:hover {
-    background-color: #f2f6fc; }
+    background-color: #F2F6FC; }

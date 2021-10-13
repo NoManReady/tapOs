@@ -120,6 +120,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 /* Break-points
@@ -249,6 +259,16 @@
 -------------------------- */
 /* Avatar
 --------------------------*/
+/* Empty
+-------------------------- */
+/* Descriptions
+-------------------------- */
+/* Skeleton 
+--------------------------*/
+/* Svg
+--------------- */
+/* Result
+-------------------------- */
 /* Break-point
 --------------------------*/
 .el-form--label-left .el-form-item__label {
@@ -318,7 +338,7 @@
     vertical-align: middle;
     float: left;
     font-size: 14px;
-    color: #606266;
+    color: #595959;
     line-height: 40px;
     padding: 0 12px 0 0;
     -webkit-box-sizing: border-box;
@@ -336,7 +356,7 @@
     .el-form-item__content .el-input-group {
       vertical-align: top; }
   .el-form-item__error {
-    color: #f34b3f;
+    color: #de321f;
     font-size: 12px;
     line-height: 1;
     padding-top: 4px;
@@ -352,16 +372,16 @@
   .el-form-item.is-required:not(.is-no-asterisk) > .el-form-item__label:before,
   .el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap > .el-form-item__label:before {
     content: '*';
-    color: #f34b3f;
+    color: #de321f;
     margin-right: 4px; }
   .el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-input__inner:focus,
   .el-form-item.is-error .el-textarea__inner,
   .el-form-item.is-error .el-textarea__inner:focus {
-    border-color: #f34b3f; }
+    border-color: #de321f; }
   .el-form-item.is-error .el-input-group__append .el-input__inner,
   .el-form-item.is-error .el-input-group__prepend .el-input__inner {
     border-color: transparent; }
   .el-form-item.is-error .el-input__validateIcon {
-    color: #f34b3f; }
+    color: #de321f; }
   .el-form-item--feedback .el-input__validateIcon {
     display: inline-block; }
