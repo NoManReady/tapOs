@@ -1,33 +1,20 @@
 <template>
 	<div class="app-header clearfix">
 		<div class="tm fl">
-			<div class="fl" v-if="collapse || isMobile">
+			<div class="fl" v-if="collapse">
 				<i class="tapos-r"></i>
 			</div>
-			<div class="header-logo fl" v-else>
-				<i :style="{ backgroundImage: `url(${logoUrl})` }"></i>
-			</div>
+			<div class="header-logo fl" v-else><span>Tap OS</span></div>
 			<div class="tm fl separation"></div>
 		</div>
 		<div class="tm fr">
-			<span @click="$emit('exit')" class="pointer mr5">
-				<i class="tapos-exit vm"></i>
-				<slot name="exitText">{{ $t('main_header.logout') }}</slot>
-			</span>
 			<ul class="nav-group clearfix">
-				<li v-if="showLang">
-					<el-select class="w100" size="mini" v-model="langConf">
-						<el-option label="中文" value="zh_cn"></el-option>
-						<el-option label="English" value="en"></el-option>
-					</el-select>
-				</li>
 				<li>
-					<a class="nav-item" href="javascript:;" v-auth="logout">
+					<a class="nav-item" href="javascript:;" @click="logout">
 						<el-tooltip content="返回到登录页面" effect="light" placement="bottom">
 							<span>
-								{{ userName }}
-								<i class="tapos-exit"></i>
-								<span>注销</span>
+								<i class="tapos-exit mr5"></i>
+								<span class="vm">注销</span>
 							</span>
 						</el-tooltip>
 					</a>
@@ -37,8 +24,7 @@
 	</div>
 </template>
 <script>
-import { removeFromSession } from '@/utils/localStorage'
-import { mapGetters } from 'vuex'
+import { clearAllCookie } from '@/config'
 export default {
 	name: 'AppHeader',
 	props: {
@@ -51,21 +37,19 @@ export default {
 		return {}
 	},
 	computed: {
-		...mapGetters(['userName']),
+		// ...mapGetters(['userName']),
 		logoUrl() {
 			return ''
 		},
 		collapse() {
-			return this.$store.getters.collapse
+			return this.$store.getters['app/collapse']
 		},
 	},
 	methods: {
 		// 注销
 		logout() {
-			this.$api.common('logout', { sn: this.curSn }).then((d) => {
-				removeFromSession('APP_DEFAULT_PATH')
-				window.top.location = window.top.location.origin
-			})
+			clearAllCookie()
+			window.location = window.location.origin
 		},
 	},
 }

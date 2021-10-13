@@ -4,7 +4,7 @@
 		<div class="app-main">
 			<app-aside :menus="menus" :p-path="pPath" @select-item="selectItem"></app-aside>
 			<div :style="contentStyl" class="app-content">
-				<router-view :class="{ block: hasBlock }" :key="`${routerId}`"></router-view>
+				<router-view :key="`${routerId}`"></router-view>
 			</div>
 			<common-top />
 		</div>
@@ -29,16 +29,13 @@ export default {
 	computed: {
 		// 内容模块style
 		contentStyl() {
-			return this.$store.getters.collapse ? { left: '64px' } : { left: '180px' }
+			return this.$store.getters['app/collapse'] ? { left: '64px' } : { left: '180px' }
 		},
 		pPath() {
 			return ['admin']
 		},
-		adminMenus() {
-			return this.$store.getters.adminMenus
-		},
 		menus() {
-			return this.adminMenus
+			return this.$store.getters.adminMenus
 		},
 		flatMenus() {
 			return flatMenus(this.menus, {}, this.pPath)

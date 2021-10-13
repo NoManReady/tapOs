@@ -2,7 +2,9 @@
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import store from '@/store'
+import menus from './menusConfig'
 
+import { getAccessToken } from '@/config'
 
 
 // 页面路由对象记录配置（选配）
@@ -13,6 +15,7 @@ HISTORY_CACHE['/'] = 0
 function loadRoutes(router, next, to) {
   return new Promise(async (resolve, reject) => {
     if (!store.getters.dynamicRoutes.length) {
+      store.dispatch('setMenus', menus)
       store.dispatch('getDynamicRoute').then(d => {
         router.addRoutes(d)
         router.replace({
@@ -28,6 +31,10 @@ function loadRoutes(router, next, to) {
 
 export default (router) => {
   router.beforeEach((to, from, next) => {
+    if (to.name !== 'login' && !getAccessToken()) {
+      next({ name: 'login' })
+      return
+    }
     NProgress.configure({
       showSpinner: false,
       parent: 'body',

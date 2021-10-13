@@ -322,4 +322,3 @@ export const registerNclick = (n, dom, cb = () => { }, type = 'click', remove = 
     dom.removeEventListener(type, _handle)
   }
 }
-Î

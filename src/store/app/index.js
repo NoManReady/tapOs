@@ -1,4 +1,5 @@
 import * as types from "./constant"
+import { loadFromLocal, saveToLocal } from '@/utils/localStorage'
 /**
  * 全局布局状态相关
  */

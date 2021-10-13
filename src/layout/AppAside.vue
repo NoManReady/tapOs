@@ -40,7 +40,7 @@ export default {
 	},
 	computed: {
 		collapse() {
-			return this.$store.getters.collapse
+			return this.$store.getters['app/collapse']
 		},
 		isVertical() {
 			return this.mode === 'vertical'
@@ -77,18 +77,19 @@ export default {
 			if (!(menus instanceof Array)) {
 				menus = menus.children || []
 			}
-			let _filterMenu = menus.filter((menu) => !menu.hidden)
-			return _filterMenu.map((menu, index) => {
+			return menus.map((menu, index) => {
 				let _lab = menu.label
 				let _iconCls = menu.icon + ' ' + (this.collapse ? 'fs26' : '')
 				let _iconJsx = this.isVertical ? <i class={_iconCls} /> : null
 				let _routeName = menu.fullPath.join('/')
-				if (menu.children && menu.children.length && menu.showChilds) {
+				if (menu.children && menu.children.length) {
 					return (
 						<el-submenu index={_routeName}>
 							<template slot="title">
 								{_iconJsx}
-								<span title={_lab}>{_lab}</span>
+								<span class="ml5" title={_lab}>
+									{_lab}
+								</span>
 							</template>
 							{this._generator(menu.children)}
 						</el-submenu>
@@ -126,7 +127,7 @@ export default {
 		},
 		// 菜单栏收起/展开
 		onCollapse() {
-			this.$store.dispatch('setCollapse', {
+			this.$store.dispatch('app/setCollapse', {
 				value: !this.collapse,
 				save: true,
 			})

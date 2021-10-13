@@ -1,8 +1,7 @@
-@import './var/_variable';
-@import './var_/mixins';
+@import './var/variable';
+@import './var/mixins';
 
-
-html[lang="en"] * {
+html[lang='en'] * {
   // white-space: nowrap;
   word-break: keep-all !important;
   .break-word {
@@ -74,7 +73,7 @@ html[lang="en"] * {
   .aside-menu.el-menu--collapse.v-leave-active {
     width: $app-aside-width;
 
-    +.menu-toggle {
+    + .menu-toggle {
       width: $app-aside-width;
     }
   }
@@ -83,13 +82,12 @@ html[lang="en"] * {
   .aside-menu:not(.el-menu--collapse).v-leave-active {
     width: 64px;
 
-    +.menu-toggle {
+    + .menu-toggle {
       width: 64px;
     }
   }
 
   .el-submenu {
-
     &.is-opened,
     &.is-active {
       background: lighten($theme, 42%) !important;
@@ -123,22 +121,21 @@ html[lang="en"] * {
     .el-menu--horizontal {
       border: none !important;
 
-      &>.el-menu-item,
-      &>.el-submenu .el-submenu__title {
+      & > .el-menu-item,
+      & > .el-submenu .el-submenu__title {
         padding: 0 12px !important;
         height: 40px !important;
         line-height: 40px !important;
       }
 
       .el-menu-item:not(.is-disabled) {
-
         &:focus,
         &:hover {
           color: $theme !important;
         }
       }
 
-      &>.el-submenu .el-submenu__icon-arrow {
+      & > .el-submenu .el-submenu__icon-arrow {
         margin-left: 5px !important;
       }
     }
@@ -173,7 +170,8 @@ html[lang="en"] * {
 .app-header {
   height: $app-header-height;
   background-color: $theme;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14);
 }
 
 .app-footer {

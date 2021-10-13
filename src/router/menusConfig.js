@@ -17,7 +17,7 @@ export default [
 					{
 						path: 'portStatus',
 						label: '端口状态',
-						compPath: 'overview/SysStatus',
+						compPath: 'overview/PortStatus',
 					},
 					{
 						path: 'portStatistics',
@@ -36,17 +36,17 @@ export default [
 						label: '端口配置',
 						compPath: 'config/PortSetting',
 					},
-                    {
+					{
 						path: 'inputSetting',
 						label: '输入端口组配置',
 						compPath: 'config/InputSetting',
 					},
-                    {
+					{
 						path: 'outputSetting',
 						label: '输出端口组配置',
 						compPath: 'config/OutputSetting',
 					},
-                    {
+					{
 						path: 'outputGrpSetting',
 						label: '输出端口组配置//',
 						compPath: 'config/OutputGrpSetting',
@@ -58,7 +58,6 @@ export default [
 					},
 				],
 			},
-			{},
 			{
 				path: 'diagnose',
 				label: '信息中心&排障',
@@ -86,7 +85,7 @@ export default [
 						label: '系统时间',
 						compPath: 'system/SysTime',
 					},
-                    {
+					{
 						path: 'managerIp',
 						label: '管理Ip',
 						compPath: 'system/ManagerIp',

@@ -8,7 +8,7 @@ export const removeCookie = (name) => cookie.expire(name, { domain })
 
 // access_token
 export const setAccessToken = (token) => setCookie('access_token', token)
-export const accessToken = () => getCookie('access_token')
+export const getAccessToken = () => getCookie('access_token')
 export const removeAccessToken = () => removeCookie('access_token')
 
 

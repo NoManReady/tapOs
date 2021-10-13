@@ -1,13 +1,13 @@
-@import '../../theme/theme.scss';
+@import './theme.scss';
 /*fixed*/
 
 $theme: $--color-primary;
 $border-main: #d4d9e0;
-$box-bgc:#E8F4FE;
-$border-light-color:#efefef;
+$box-bgc: #e8f4fe;
+$border-light-color: #efefef;
 // layout
 $app-header-height: 64px;
 $app-footer-height: 0;
 $app-aside-width: 180px;
 
-$app-bg-color:#f0f2f5;
+$app-bg-color: #f0f2f5;

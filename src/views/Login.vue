@@ -53,8 +53,6 @@
 </template>
 <script>
 import { setAccessToken, clearAllCookie } from '@/config'
-import { login } from '@/api/modules/login'
-import Cookie from 'cookies-js'
 export default {
 	name: 'Login',
 	data() {
@@ -75,11 +73,11 @@ export default {
 			this.$refs.loginForm.validate(async (valid) => {
 				if (valid) {
 					try {
-						const _result = await login(this.loginForm)
+						// const _result = await login(this.loginForm)
 						clearAllCookie()
-						setAccessToken(_result)
+						setAccessToken('test')
 						this.$router.push({
-							name: 'Admin',
+							name: 'admin',
 						})
 					} catch (error) {}
 				}

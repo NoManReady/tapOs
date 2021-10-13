@@ -22,9 +22,9 @@ export default {
 		debounceResize() {
 			return debounce(() => {
 				if (document.documentElement.clientWidth <= 768) {
-					this.$store.dispatch('setCollapse', { vale: true, save: false })
+					this.$store.dispatch('app/setCollapse', { vale: true, save: false })
 				} else if (document.documentElement.clientWidth > 992) {
-					this.$store.dispatch('setCollapse', {
+					this.$store.dispatch('app/setCollapse', {
 						value: !!loadFromLocal('APP_ASIDE_CLOSE'),
 						save: true,
 					})
@@ -35,7 +35,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import './style/layout.scss';
+@import '~@/style/layout.scss';
 .app-container {
 	width: 100%;
 	height: 100%;

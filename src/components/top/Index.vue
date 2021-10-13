@@ -1,12 +1,12 @@
 <template>
 	<div :class="classes" :style="styles" @click="_onBack">
 		<slot>
-			<i class="el-icon-upload2 fs20" :title="$t('comp.goTop')"></i>
+			<i class="el-icon-upload2 fs20" title="返回顶部"></i>
 		</slot>
 	</div>
 </template>
 <script>
-import { scrollTop } from '@/utils/utils'
+import { scrollTop } from '@/utils/tool'
 const prefixCls = 'top'
 export default {
 	name: 'CommonTop',
@@ -78,7 +78,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '~@/style/utils/_variable.scss';
+@import '~@/style/var/variable';
 .top {
 	position: fixed;
 	background: $theme;
