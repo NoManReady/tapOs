@@ -13,7 +13,7 @@
 <script>
 import { AppAside, AppHeader } from '@/layout'
 import Top from '@/components/top/Index'
-import { flatMenus } from '@/utils/menus'
+import { flatMenus } from '@/utils/menuConfig'
 export default {
 	name: 'Admin',
 	data() {

@@ -4,7 +4,7 @@ import {
 } from '@/router/common'
 import {
   getQuene
-} from '@/utils/menus'
+} from '@/utils/menuConfig'
 /**
  * 菜单状态相关
  */
